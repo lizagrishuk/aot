@@ -1,0 +1,7 @@
+rank-bm25>=0.2.2,<1
+nltk>=3.8,<4
+pydantic>=2.0,<3
+pandas>=2.0,<3
+pytest>=8.0,<10
+streamlit>=1.32,<2
+reportlab>=4.0,<5

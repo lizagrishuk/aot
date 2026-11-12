@@ -1,0 +1,23 @@
+{
+  "status": "experiment_complete",
+  "model": "qwen2.5:7b-instruct",
+  "base_observed": 36,
+  "stress_observed": 84,
+  "base_native_or_repaired": 35,
+  "stress_native_or_repaired": 83,
+  "base_fallback": 1,
+  "stress_fallback": 1,
+  "report_words": 768,
+  "manual_requirements": [
+    "confirm individual responsibilities in CONTRIBUTION.md",
+    "verify Streamlit UI in a browser after deployment",
+    "publish GitHub repository and check public access"
+  ],
+  "team_gold_review": "confirmed_by_user_for_main_gold_and_stress_expected_statuses",
+  "team_members": [
+    "Атанова Софья",
+    "Гольцман Глеб",
+    "Грищук Елизавета"
+  ],
+  "submission_note": "Team gold review is recorded from user confirmation; individual role allocation, browser verification and remote Git publication remain external checks."
+}
