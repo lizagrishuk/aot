@@ -1,0 +1,54 @@
+{
+  "actual_stress_runs": 84,
+  "usable_stress_outputs": 84,
+  "model_valid_stress_runs": 83,
+  "native_model_valid_stress_runs": 80,
+  "retry_valid_stress_runs": 3,
+  "postprocessed_after_retry_outputs": 0,
+  "safe_fallback_outputs": 1,
+  "failed_or_invalid": 0,
+  "metrics_available": true,
+  "by_test": {
+    "permutation": {
+      "observed_outputs": 36,
+      "native_or_repaired_outputs": 36,
+      "safe_fallback_outputs": 0,
+      "document_permutation_context_changed_cases": 12,
+      "same_context_replication_control_cases": 24,
+      "end_to_end_comparable_pairs": 12,
+      "end_to_end_answer_changed_rate": 0.1667,
+      "model_only_comparable_pairs": 11,
+      "model_only_answer_changed_rate": 0.0909,
+      "model_only_evidence_ids_stability": 0.4545,
+      "same_context_control_end_to_end_pairs": 24,
+      "same_context_control_end_to_end_status_changed_rate": 0.0417,
+      "same_context_control_model_only_pairs": 24,
+      "same_context_control_model_only_status_changed_rate": 0.0417,
+      "same_context_control_model_only_evidence_ids_stability": 0.9583
+    },
+    "remove_premise": {
+      "observed_outputs": 12,
+      "native_or_repaired_outputs": 12,
+      "safe_fallback_outputs": 0,
+      "redundant_control_cases": 0,
+      "end_to_end_changed_to_insufficient_or_both_rate": 0.25,
+      "model_only_changed_to_insufficient_or_both_rate": 0.25,
+      "end_to_end_matches_expected_status_rate": 0.25,
+      "model_only_matches_expected_status_rate": 0.25
+    },
+    "add_contradiction": {
+      "expected_both_cases": 12,
+      "both_recall_on_expected_both": 0.1667,
+      "expected_unchanged_cases": 24,
+      "unchanged_rate_when_source_is_weaker": 0.5833,
+      "observed_outputs": 36,
+      "native_or_repaired_outputs": 35,
+      "safe_fallback_outputs": 1,
+      "end_to_end_both_status_rate": 0.0833,
+      "model_only_both_status_rate": 0.0857,
+      "end_to_end_matches_expected_status_rate": 0.4444,
+      "model_only_matches_expected_status_rate": 0.4571
+    }
+  },
+  "note": "Model-only metrics include only strict parser-valid outputs from the first or second model generation. `postprocessed_after_retry` and `safe_fallback` are excluded from raw-LLM metrics but included in end-to-end metrics. End-to-end metrics describe the complete system, not raw model robustness. Interpret test metrics together with model_valid_stress_runs."
+}
